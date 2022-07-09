@@ -1,6 +1,6 @@
 {
   "name": "@theriot.dev/env",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A project to access environment variables",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,10 @@
     "build": "tsc -p tsconfig.build.json",
     "test": "jest --coverage"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "environment"
+  ],
   "author": "Christian Theriot <christian@theriot.dev>",
   "license": "MIT",
   "devDependencies": {
