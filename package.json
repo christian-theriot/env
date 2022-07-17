@@ -1,12 +1,15 @@
 {
   "name": "@theriot.dev/env",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A project to access environment variables",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "start": "node ./dist/index.js",
     "build": "tsc -p tsconfig.build.json",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm t"
   },
   "keywords": [
     "typescript",
@@ -23,5 +26,8 @@
   },
   "dependencies": {
     "dotenv": "^16.0.1"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
