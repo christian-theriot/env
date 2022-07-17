@@ -2,8 +2,8 @@
   "name": "@theriot.dev/env",
   "version": "0.1.0",
   "description": "A project to access environment variables",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/index",
+  "typings": "dist/index",
   "scripts": {
     "start": "node ./dist/index.js",
     "build": "tsc -p tsconfig.build.json",
